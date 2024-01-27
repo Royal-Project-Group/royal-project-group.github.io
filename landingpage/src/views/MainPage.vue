@@ -129,6 +129,25 @@ const redirectToEditor = () => {
     </section>
   </div>
 
+  <div class="content">
+    <section class="community">
+      <h1>Want to contribute?</h1>
+      <h2>Become part of the community or help in improving the Royal Tracer.</h2>
+      <div>
+        <div class="discord">
+          <a href="https://discord.gg/ekZGvJGx">
+            <img src="/src/assets/discord.svg" />
+          </a>
+        </div>
+        <div class="github">
+          <a href="https://github.com/Royal-Project-Group/royaltracer">
+            <img src="/src/assets/github.svg" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
 </template>
 <style scoped>
 header {
@@ -191,6 +210,24 @@ header {
 section {
   padding: 20px;
   background-color: #333; /* Add a subtle background color */
+}
+
+section.community h1, section.community h2 {
+  text-align: center;
+}
+
+section.community div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section.community img {
+  width: 4em; 
+  height: auto; 
+}
+
+div.discord {
+  height: 100%;
 }
 
 h1 {
