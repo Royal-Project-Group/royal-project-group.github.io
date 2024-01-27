@@ -35,7 +35,7 @@ const teamMembers = [
     github: "https://github.com/t1mo1s",
   },
   {
-    name: "Malte Schmitz",
+    name: "Malte Lanz",
     role: "Developer",
     github: "https://github.com/ML200",
   }
