@@ -62,6 +62,10 @@ const redirectToEditor = () => {
   window.location.href = 'https://editor.royaltracer.com';
 };
 
+const redirectToGallery = () => {
+  window.location.href = 'https://gallery.royaltracer.com';
+};
+
 </script>
 
 <template>
@@ -101,7 +105,10 @@ const redirectToEditor = () => {
         </p>
       </div>
       <div class="aboutImage">
-        <img src="/src/assets/audi.png" alt="Audi Render" id="audi">
+        <div class="gallery">
+          <img src="/src/assets/audi.png" alt="Audi Render" id="audi">
+          <button @click="redirectToGallery" class="galleryBtn">Complete Gallery</button>
+        </div>
       </div>
     </section>
   </div>
@@ -171,6 +178,10 @@ header {
   margin-left: 20px;
 }
 
+.gallery{
+  text-align: center;
+}
+
 #audi{
   width: 100%;  /* or any other percentage */
   height: auto; /* to maintain the aspect ratio */
@@ -232,6 +243,13 @@ button {
     width: 200px;
     font-weight: bold;
   }
+
+  .galleryBtn{
+    height: 50px;
+    width: 250px;
+    font-weight: bold;
+  }
+
 
 
 .content-overlay {
