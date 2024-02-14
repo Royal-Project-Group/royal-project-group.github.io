@@ -102,6 +102,7 @@ const observeVideo = () => {
       </div>
     </header>
   </div>
+
   <div class="content">
     <section class="video">
       <video id="videoElement" width="320" height="240" loop>
@@ -109,6 +110,9 @@ const observeVideo = () => {
         Your browser does not support the video tag.
       </video>
     </section>
+  </div>
+
+  <div class="content">
     <section class="about">
       <div class="aboutText">
         <h1>About the Project</h1>
@@ -187,6 +191,17 @@ header {
 .content {
   padding: 16px;
   background-color: #ffffff; /* Add a subtle background color */
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+}
+
+#videoElement{
+  height: 100%;
+  width: 100%;
+  max-width: 80%;
 }
 
 .about{
@@ -378,6 +393,10 @@ body {
   .about, .team {
     flex-direction: column;
     align-items: center;
+  }
+
+  #videoElement{
+    max-width: 100%;
   }
 
   .aboutText, .aboutImage, .thu {
