@@ -56,6 +56,7 @@ onMounted(() => {
   setInterval(() => {
     currImageIndex.value = (currImageIndex.value + 1) % imagePaths.length;
   }, 5000);
+  observeVideo();
 });
 
 const redirectToEditor = () => {
@@ -65,6 +66,26 @@ const redirectToEditor = () => {
 const redirectToGallery = () => {
   window.location.href = 'https://gallery.royaltracer.com';
 };
+
+const observeVideo = () => {
+  const videoElement = document.getElementById('videoElement');
+  const options = {
+    root: null, // observes intersections relative to the viewport
+    threshold: 0.5, // trigger when at least 50% of the video is visible
+  };
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Play the video if it's visible
+        videoElement.play();
+      } else {
+        // Pause the video if it's not visible
+        videoElement.pause();
+      }
+    });
+  }, options);
+  observer.observe(videoElement);
+}
 
 </script>
 
@@ -82,6 +103,12 @@ const redirectToGallery = () => {
     </header>
   </div>
   <div class="content">
+    <section class="video">
+      <video id="videoElement" width="320" height="240" loop>
+        <source src="/src/assets/technicalDemonstration.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
     <section class="about">
       <div class="aboutText">
         <h1>About the Project</h1>
