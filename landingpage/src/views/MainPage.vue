@@ -135,7 +135,7 @@ const redirectToEditor = () => {
       <h2>Become part of the community or help in improving the Royal Tracer.</h2>
       <div>
         <div class="discord">
-          <a href="https://discord.gg/wm89TeRhee">
+          <a href="https://discord.gg/AF2AqzsV4e">
             <img src="/src/assets/discord.svg" />
           </a>
         </div>
