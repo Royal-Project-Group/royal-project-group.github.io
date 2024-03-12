@@ -206,16 +206,11 @@ header {
 }
 
 footer {
-  display: inline;
+  display: block;
   background-color: #c1c1c1;
   font-size: 10pt;
   font-family: "Consolas", monospace;
   padding: 0.5rem;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1030;
 }
 
 .logo {
