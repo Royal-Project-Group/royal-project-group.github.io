@@ -189,7 +189,7 @@ const observeVideo = () => {
 
   <footer class="footer">
     <div class="copyright"> © Copyright 2024 Royal Project Group. 
-      <a href="/imp">Impressum</a>. Last updated: March 7, 2024. 
+      <router-link to="/imp">Impressum</router-link>. Last updated: March 7, 2024. 
     </div>
   </footer>
   
