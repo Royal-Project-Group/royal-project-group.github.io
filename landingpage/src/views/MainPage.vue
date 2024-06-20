@@ -43,11 +43,11 @@ const teamMembers = [
 ];
 
 const imagePaths = [
-  '/src/assets/showcase/example1.png',
-  '/src/assets/showcase/malteAlternative.png',
-  '/src/assets/showcase/background2.png',
-  '/src/assets/showcase/render.png',
-  '/src/assets/showcase/buuney.png',
+  '/assets/showcase/example1.png',
+  '/assets/showcase/malteAlternative.png',
+  '/assets/showcase/background2.png',
+  '/assets/showcase/render.png',
+  '/assets/showcase/buuney.png',
 ];
 
 let currImageIndex = ref(0);
@@ -98,7 +98,6 @@ const observeVideo = () => {
         <div class="blurredField">
           <h1 class="typewriter">ROYAL TRACER</h1>
         </div>
-        <button @click="redirectToEditor" class="tryBtn">Try here!</button>
       </div>
     </header>
   </div>
@@ -106,7 +105,7 @@ const observeVideo = () => {
   <div class="content">
     <section class="video">
       <video id="videoElement" width="320" height="240" loop>
-        <source src="/src/assets/technicalDemonstration.mp4" type="video/mp4">
+        <source src="/assets/technicalDemonstration.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </section>
@@ -137,8 +136,7 @@ const observeVideo = () => {
       </div>
       <div class="aboutImage">
         <div class="gallery">
-          <img src="/src/assets/audi.png" alt="Audi Render" id="audi">
-          <button @click="redirectToGallery" class="galleryBtn">Complete Gallery</button>
+          <img src="/assets/audi.png" alt="Audi Render" id="audi">
         </div>
       </div>
     </section>
@@ -151,12 +149,12 @@ const observeVideo = () => {
       <div>
         <div class="discord">
           <a href="https://discord.gg/AF2AqzsV4e">
-            <img src="/src/assets/discord.svg" />
+            <img src="/assets/discord.svg" />
           </a>
         </div>
         <div class="github">
           <a href="https://github.com/Royal-Project-Group/royaltracer">
-            <img src="/src/assets/github.svg" />
+            <img src="/assets/github.svg" />
           </a>
         </div>
       </div>
@@ -166,7 +164,7 @@ const observeVideo = () => {
   <div class="content">
     <section class="team">
       <div class="thu">
-        <img src="/src/assets/THU.svg" alt="THU Logo">
+        <img src="/assets/THU.svg" alt="THU Logo">
       </div>
 
       <div>
